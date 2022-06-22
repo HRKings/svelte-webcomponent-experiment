@@ -6,7 +6,7 @@ export default defineConfig({
   build:{
     lib:{
       entry: './src/main.ts',
-      name: 'Svelte-DS',
+      name: 'Svelte-WC',
     }
   },
   plugins: [svelte({
