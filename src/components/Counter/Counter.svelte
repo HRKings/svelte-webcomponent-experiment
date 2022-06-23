@@ -8,10 +8,6 @@
   }
 </script>
 
-<button on:click={increment}>
-  Clicks: {count}
-</button>
-
 <style>
   button {
     font-family: inherit;
@@ -35,3 +31,7 @@
     background-color: rgba(255, 62, 0, 0.2);
   }
 </style>
+
+<button on:click={increment}>
+  Clicks: {count}
+</button>
