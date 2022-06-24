@@ -5,12 +5,16 @@ export default {
   component: Counter,
   argTypes: {
     count: { control: 'number' },
+    onClick: { action: 'onClick' },
   },
 };
 
 const Template = (args) => ({
   Component: Counter,
   props: args,
+  on: {
+    click: args.onClick,
+  },
 });
 
 export const Default = Template.bind({});

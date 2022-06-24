@@ -1,11 +1,17 @@
 <svelte:options tag="svelte-counter" />
 
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
   export let count = 0;
 
-  function increment() {
+  function onClick(event) {
     count += 1
-  }
+    dispatch('click', event);
+  };
+
 </script>
 
 <style>
@@ -32,6 +38,6 @@
   }
 </style>
 
-<button on:click={increment}>
+<button on:click={onClick}>
   Clicks: {count}
 </button>
