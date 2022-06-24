@@ -1,1 +1,2 @@
-export * from './components/Counter/Counter.svelte';
+// @ts-ignore next line
+const modules = import.meta.globEager('./components/**/*.svelte')

@@ -11,6 +11,7 @@ export default defineConfig({
   },
   plugins: [svelte({
     compilerOptions: {
+      dev: process.env.NODE_ENV != 'production',
       customElement: true,
     },
   }),]
